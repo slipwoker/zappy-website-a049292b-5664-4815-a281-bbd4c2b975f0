@@ -1,0 +1,56 @@
+# Travel&Enjoyed — Generative Engine Optimization Map
+
+> A travel and tourism business.
+
+---
+
+## Pages
+
+### Home
+https://travel-enjoyed-a049292b.zappy5.app
+
+### Deals
+https://travel-enjoyed-a049292b.zappy5.app/deals
+
+### Destinations
+https://travel-enjoyed-a049292b.zappy5.app/destinations
+
+### Contact
+https://travel-enjoyed-a049292b.zappy5.app/contact
+
+## Legal & Policy
+
+### Privacy Policy
+https://travel-enjoyed-a049292b.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://travel-enjoyed-a049292b.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://travel-enjoyed-a049292b.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Travel&Enjoyed
+Travel&Enjoyed is a business in the travel and tourism industry.
+
+## Target Audience
+- Luxury Vacation Seekers
+- Family Adventure Planners
+- Newlywed Travelers
+- Retiree Globetrotters
+
+## Industry
+travel and tourism
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://travel-enjoyed-a049292b.zappy5.app/sitemap.xml
+- **Robots.txt**: https://travel-enjoyed-a049292b.zappy5.app/robots.txt
