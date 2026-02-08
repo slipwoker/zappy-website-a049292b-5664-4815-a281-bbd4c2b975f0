@@ -1,56 +1,43 @@
-# Travel&Enjoyed — Generative Engine Optimization Map
-
-> A travel and tourism business.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### Home
-https://travel-enjoyed-a049292b.zappy5.app
+https://example.com
 
 ### Deals
-https://travel-enjoyed-a049292b.zappy5.app/deals
+https://example.com/deals
 
 ### Destinations
-https://travel-enjoyed-a049292b.zappy5.app/destinations
+https://example.com/destinations
 
 ### Contact
-https://travel-enjoyed-a049292b.zappy5.app/contact
+https://example.com/contact
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://travel-enjoyed-a049292b.zappy5.app/privacy
+https://example.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://travel-enjoyed-a049292b.zappy5.app/terms
+https://example.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://travel-enjoyed-a049292b.zappy5.app/accessibility
+https://example.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Travel&Enjoyed
-Travel&Enjoyed is a business in the travel and tourism industry.
-
-## Target Audience
-- Luxury Vacation Seekers
-- Family Adventure Planners
-- Newlywed Travelers
-- Retiree Globetrotters
-
-## Industry
-travel and tourism
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://travel-enjoyed-a049292b.zappy5.app/sitemap.xml
-- **Robots.txt**: https://travel-enjoyed-a049292b.zappy5.app/robots.txt
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
