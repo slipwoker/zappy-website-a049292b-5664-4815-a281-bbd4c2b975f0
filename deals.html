@@ -2006,230 +2006,234 @@
   </div>
 </section>
 
-<section style="position: relative; width: 100%; max-width: 100%; box-sizing: border-box; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0B1220 0%, #1D4ED8 50%, #14B8A6 100%); overflow: hidden; padding: 120px 20px 80px;" data-zappy-section="true" class="section">
+<section style="position: relative; width: 100%; max-width: 100%; box-sizing: border-box; background: linear-gradient(135deg, #0B1220 0%, #1a2847 50%, #0B1220 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 120px 20px 80px;" data-zappy-section="true" class="section">
   <style>
-    .airhelp-redesign {
+    .rtl-notice-container {
       position: relative;
-      z-index: 10;
       max-width: 900px;
       width: 100%;
-      margin: 0 auto;
+      z-index: 10;
     }
-
-    .airhelp-card {
-      background: rgba(255, 255, 255, 0.95);
+    
+    .rtl-notice-card {
+      background: rgba(255, 255, 255, 0.98);
+      border-radius: 24px;
+      padding: 60px 50px;
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.4), 
+                  0 0 0 1px rgba(255, 255, 255, 0.1),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      position: relative;
       backdrop-filter: blur(20px);
-      border-radius: 40px;
-      padding: 80px 60px;
-      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
-      position: relative;
-      overflow: hidden;
-      transform: perspective(1000px) rotateX(2deg);
-      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: perspective(1000px) rotateY(-2deg);
+      transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
-
-    .airhelp-card:hover {
-      transform: perspective(1000px) rotateX(0deg) translateY(-10px);
-      box-shadow: 0 50px 120px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    
+    .rtl-notice-card:hover {
+      transform: perspective(1000px) rotateY(0deg) translateY(-8px);
+      box-shadow: 0 40px 120px rgba(0, 0, 0, 0.5),
+                  0 0 0 1px rgba(20, 184, 166, 0.3),
+                  inset 0 1px 0 rgba(255, 255, 255, 1);
     }
-
-    .airhelp-card::before {
-      content: '';
+    
+    .rtl-notice-accent {
       position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: var(--gradient-gold-shine);
-      animation: shine 3s infinite;
-      pointer-events: none;
-    }
-
-    @keyframes shine {
-      0%, 100% { left: -100%; }
-      50% { left: 100%; }
-    }
-
-    .airhelp-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .airhelp-text {
-      font-family: var(--font-body);
-      font-size: 1.25rem;
-      line-height: 2;
-      color: var(--text-dark);
-      text-align: right;
-      direction: rtl;
-      margin: 0;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-    }
-
-    .airhelp-link {
-      display: inline-block;
-      background: var(--gradient-primary);
-      color: var(--text-light);
-      text-decoration: none;
-      padding: 18px 40px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin-top: 40px;
-      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-      box-shadow: 0 10px 30px rgba(29, 78, 216, 0.4);
-      position: relative;
-      overflow: hidden;
-      letter-spacing: 0.05em;
-    }
-
-    .airhelp-link::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
-    }
-
-    .airhelp-link:hover::before {
-      width: 300px;
-      height: 300px;
-    }
-
-    .airhelp-link:hover {
-      transform: scale(1.05) translateY(-3px);
-      box-shadow: 0 15px 40px rgba(29, 78, 216, 0.6);
-    }
-
-    .airhelp-link span {
-      position: relative;
-      z-index: 1;
-    }
-
-    .floating-shape {
-      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 180px;
+      height: 180px;
+      background: var(--gradient-gold-accent);
       border-radius: 50%;
       opacity: 0.15;
-      animation: float 20s infinite ease-in-out;
+      filter: blur(60px);
+      animation: pulse-glow 4s ease-in-out infinite;
     }
-
-    .shape-1 {
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
-      top: -200px;
-      left: -200px;
-      animation-delay: 0s;
+    
+    .rtl-notice-accent-2 {
+      position: absolute;
+      bottom: -50px;
+      left: -50px;
+      width: 200px;
+      height: 200px;
+      background: var(--gradient-primary);
+      border-radius: 50%;
+      opacity: 0.12;
+      filter: blur(70px);
+      animation: pulse-glow 5s ease-in-out infinite 1s;
     }
-
-    .shape-2 {
+    
+    @keyframes pulse-glow {
+      0%, 100% { transform: scale(1); opacity: 0.15; }
+      50% { transform: scale(1.2); opacity: 0.25; }
+    }
+    
+    .rtl-notice-text {
+      direction: rtl;
+      text-align: right;
+      font-family: var(--font-body);
+      font-size: 20px;
+      line-height: 1.8;
+      color: var(--text-dark);
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+    
+    .rtl-notice-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: linear-gradient(to right, rgba(29, 78, 216, 0.08), rgba(29, 78, 216, 0.12));
+      transition: all 0.3s ease;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .rtl-notice-link:hover {
+      background: var(--primary);
+      color: var(--text-light);
+      border-bottom-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+    }
+    
+    .rtl-notice-icon {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      width: 70px;
+      height: 70px;
+      background: var(--gradient-primary);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(29, 78, 216, 0.3);
+      transform: rotate(-8deg);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    
+    .rtl-notice-card:hover .rtl-notice-icon {
+      transform: rotate(0deg) scale(1.1);
+    }
+    
+    .rtl-notice-icon::before {
+      content: '✈️';
+      font-size: 36px;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+    
+    .floating-element {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      pointer-events: none;
+    }
+    
+    .floating-element-1 {
       width: 300px;
       height: 300px;
-      background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
-      bottom: -150px;
-      right: -150px;
-      animation-delay: 5s;
+      top: 10%;
+      right: 5%;
+      animation: float-diagonal 20s ease-in-out infinite;
     }
-
-    .shape-3 {
-      width: 250px;
-      height: 250px;
-      background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
-      top: 50%;
-      right: -100px;
-      animation-delay: 10s;
+    
+    .floating-element-2 {
+      width: 200px;
+      height: 200px;
+      bottom: 15%;
+      left: 10%;
+      animation: float-diagonal 15s ease-in-out infinite 2s;
     }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translate(0, 0) scale(1);
-      }
-      33% {
-        transform: translate(50px, -50px) scale(1.1);
-      }
-      66% {
-        transform: translate(-30px, 30px) scale(0.9);
-      }
-    }
-
-    .accent-decoration {
-      position: absolute;
+    
+    .floating-element-3 {
       width: 150px;
       height: 150px;
-      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-      background: var(--gradient-gold-accent);
-      opacity: 0.1;
-      top: -50px;
-      right: -50px;
-      animation: morph 8s infinite ease-in-out;
+      top: 50%;
+      left: 5%;
+      animation: float-diagonal 18s ease-in-out infinite 4s;
     }
-
-    @keyframes morph {
-      0%, 100% {
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-      }
-      50% {
-        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-      }
+    
+    @keyframes float-diagonal {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(30px, -30px) rotate(90deg); }
+      50% { transform: translate(0, -60px) rotate(180deg); }
+      75% { transform: translate(-30px, -30px) rotate(270deg); }
     }
-
+    
+    .grid-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    
     @media (max-width: 768px) {
-      .airhelp-card {
-        padding: 50px 30px;
-        border-radius: 30px;
-        transform: perspective(1000px) rotateX(0deg);
+      section {
+        padding: 100px 15px 60px;
+        min-height: auto;
       }
-
-      .airhelp-text {
-        font-size: 1.1rem;
-        line-height: 1.8;
+      
+      .rtl-notice-card {
+        padding: 40px 30px;
+        transform: none;
+        border-radius: 20px;
       }
-
-      .airhelp-link {
-        padding: 15px 35px;
-        font-size: 1rem;
-        margin-top: 30px;
+      
+      .rtl-notice-card:hover {
+        transform: translateY(-4px);
       }
-
-      .floating-shape {
-        opacity: 0.08;
+      
+      .rtl-notice-text {
+        font-size: 18px;
+        line-height: 1.7;
       }
-
-      .shape-1 {
-        width: 250px;
-        height: 250px;
+      
+      .rtl-notice-icon {
+        width: 60px;
+        height: 60px;
+        top: 25px;
+        left: 25px;
       }
-
-      .shape-2 {
-        width: 200px;
-        height: 200px;
+      
+      .rtl-notice-icon::before {
+        font-size: 30px;
       }
-
-      .shape-3 {
-        width: 180px;
-        height: 180px;
+      
+      .floating-element-1,
+      .floating-element-2,
+      .floating-element-3 {
+        display: none;
       }
     }
   </style>
-
-  <div class="floating-shape shape-1"></div>
-  <div class="floating-shape shape-2"></div>
-  <div class="floating-shape shape-3"></div>
-
-  <div class="airhelp-redesign">
-    <div class="airhelp-card">
-      <div class="accent-decoration"></div>
-      <div class="airhelp-content">
-        <p class="airhelp-text">
-          AirHelp שעוזרת להבין את זכויותיכם ולקבל עד 600 אירו כפיצוי על טיסות שעוכבו או בוטלו. כל שעליכם לעשות הוא למסור את פרטי הטיסה שלכם. אם אתם זכאים, AirHelp תטפל בתהליך התביעה בשמכם תמורת עמלה של 35% (50% אם נדרשים הליכים משפטיים). <a href="https://https://airhelp.tp.st/xXxcrULT" class="airhelp-link"><span>https://airhelp.tp.st/xXxcrULT</span></a>
-        </p>
-      </div>
+  
+  <div class="grid-pattern"></div>
+  
+  <div class="floating-element floating-element-1"></div>
+  <div class="floating-element floating-element-2"></div>
+  <div class="floating-element floating-element-3"></div>
+  
+  <div class="rtl-notice-container">
+    <div class="rtl-notice-card">
+      <div class="rtl-notice-accent"></div>
+      <div class="rtl-notice-accent-2"></div>
+      <div class="rtl-notice-icon"></div>
+      
+      <p class="rtl-notice-text">
+        AirHelp שעוזרת להבין את זכויותיכם ולקבל עד 600 אירו כפיצוי על טיסות שעוכבו או בוטלו. כל שעליכם לעשות הוא למסור את פרטי הטיסה שלכם. אם אתם זכאים, AirHelp תטפל בתהליך התביעה בשמכם תמורת עמלה של 35% (50% אם נדרשים הליכים משפטיים). <a href="https://https://airhelp.tp.st/xXxcrULT" class="rtl-notice-link" target="_blank" rel="noopener noreferrer">https://airhelp.tp.st/xXxcrULT</a>
+      </p>
     </div>
   </div>
 </section>
