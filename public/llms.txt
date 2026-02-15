@@ -1,6 +1,4 @@
-# Travel&Enjoyed — Generative Engine Optimization Map
-
-> A travel and tourism business.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -36,18 +34,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Travel&Enjoyed
-Travel&Enjoyed is a business in the travel and tourism industry.
-
-## Target Audience
-- Luxury Vacation Seekers
-- Family Adventure Planners
-- Newlywed Travelers
-- Retiree Globetrotters
-
-## Industry
-travel and tourism
-
+## About Business
 ---
 
 # Additional Resources

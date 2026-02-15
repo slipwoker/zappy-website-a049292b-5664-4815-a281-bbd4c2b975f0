@@ -73,10 +73,235 @@
   opacity: 0.7;
 }</style>
     <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.deals-packages-section {
+  position: relative;
+  background: #FFFFFF;
+  color: var(--text-dark);
+  padding: 80px 16px 60px;
+  overflow: visible;
+}
+
+.deals-packages-section .deals-packages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.deals-packages-section .deals-packages-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.deals-packages-section .deals-packages-header h2 {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.deals-packages-section .deals-packages-intro {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.deals-packages-section .deals-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.deals-packages-section .package-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(15,23,42,0.10);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.deals-packages-section .package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15,23,42,0.15);
+}
+
+.deals-packages-section .package-card-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.deals-packages-section .package-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.deals-packages-section .package-card:hover .package-card-image img {
+  transform: scale(1.05);
+}
+
+.deals-packages-section .package-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.deals-packages-section .package-card-content h3 {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.deals-packages-section .package-description {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.deals-packages-section .package-inclusions {
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+
+.deals-packages-section .package-inclusions p {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+  padding-left: 18px;
+  position: relative;
+}
+
+.deals-packages-section .package-inclusions p::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.deals-packages-section .package-cta {
+  background: #0B63B6;
+  color: #FFFFFF;
+  padding: 10px 18px;
+  border-radius: 3px;
+  border: 1px solid #0A5AA7;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.18);
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.2s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+.deals-packages-section .package-cta:hover {
+  background: #0A5AA7;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 rgba(0,0,0,0.18);
+}
+
+.deals-packages-section .package-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.18);
+}
+
+/* Bottom Transition: Paper Layer Overlap */
+.deals-packages-section .deals-packages-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.deals-packages-section .deals-packages-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .deals-packages-section .deals-packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .deals-packages-section {
+    padding: 100px 16px 50px;
+  }
+
+  .deals-packages-section .deals-packages-header {
+    margin-bottom: 40px;
+  }
+
+  .deals-packages-section .deals-packages-header h2 {
+    font-size: 2rem;
+  }
+
+  .deals-packages-section .deals-packages-intro {
+    font-size: 1rem;
+  }
+
+  .deals-packages-section .deals-packages-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+  }
+
+  .deals-packages-section .package-card-image {
+    height: 200px;
+  }
+
+  .deals-packages-section .package-card-content {
+    padding: 20px;
+  }
+
+  .deals-packages-section .package-card-content h3 {
+    font-size: 1.125rem;
+  }
+
+  .deals-packages-section .package-description {
+    font-size: 0.875rem;
+  }
+
+  .deals-packages-section .package-inclusions p {
+    font-size: 0.8125rem;
+  }
+}
+</style>
 <!-- Zappy Analytics -->
 <script>
 (function() {
@@ -355,16 +580,16 @@
 </div>
   <nav class="navbar">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   
   <button class="phone-header-btn" aria-label="Call">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -372,7 +597,7 @@
   <div class="nav-container">
     <div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/business-logo.webp" alt="Travel&amp;Enjoyed" class="logo" />
+        <img src="/assets/business-logo.webp" alt="Travel&amp;Enjoyed" class="logo">
       </a>
     </div>
     
@@ -751,87 +976,910 @@
 
   
   <main>
-    <section class="deals-intro-section" data-layout-spec="Deals-intro">
-  <div class="deals-intro-container">
-    <div class="deals-intro-header">
-      <h1>All Travel Deals</h1>
-      <p class="deals-intro-lead">Browse our curated collection of tour travel agency packages. Each deal showcases typical inclusions, pricing ranges, and what you can expect—helping you compare options quickly and find the perfect fit for your next adventure.</p>
+    
+
+<section style="position: relative; width: 100%; max-width: 100%; box-sizing: border-box; background: var(--bg-dark); overflow: hidden; padding: 0;" data-zappy-section="true" class="section">
+  <style>
+    .video-grid-section {
+      position: relative;
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 0;
+      overflow: hidden;
+    }
+
+    .video-tile {
+      position: relative;
+      overflow: hidden;
+      min-height: 50vh;
+      cursor: pointer;
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .video-tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(29, 78, 216, 0.85) 0%, rgba(20, 184, 166, 0.75) 50%, rgba(249, 115, 22, 0.85) 100%);
+      z-index: 2;
+      transition: opacity 0.6s ease;
+      opacity: 0.6;
+    }
+
+    .video-tile:hover::before {
+      opacity: 0.25;
+    }
+
+    .video-tile-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scale(1);
+    }
+
+    .video-tile:hover .video-tile-bg {
+      transform: scale(1.15) rotate(2deg);
+    }
+
+    .video-tile-content {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+
+    .video-tile:hover .video-tile-content {
+      transform: translateY(-10px);
+    }
+
+    .video-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-tile:hover .video-icon {
+      background: rgba(255, 255, 255, 0.95);
+      transform: scale(1.2);
+      box-shadow: 0 12px 48px rgba(249, 115, 22, 0.5);
+    }
+
+    .video-icon svg {
+      width: 36px;
+      height: 36px;
+      fill: white;
+      transition: fill 0.4s ease;
+    }
+
+    .video-tile:hover .video-icon svg {
+      fill: var(--accent);
+    }
+
+    .video-tile:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+
+    .video-tile:nth-child(2) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
+
+    .video-tile:nth-child(3) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .video-tile:nth-child(4) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    .floating-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text-dark);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 15;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.4s ease;
+    }
+
+    .video-tile:hover .floating-badge {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .center-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 20;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .center-logo {
+      width: 120px;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(40px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      margin: 0 auto 20px;
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    .center-logo svg {
+      width: 60px;
+      height: 60px;
+      fill: white;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+      }
+    }
+
+    .center-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .corner-tiles {
+      position: absolute;
+      display: flex;
+      gap: 12px;
+      z-index: 5;
+    }
+
+    .corner-top {
+      top: 20px;
+      left: 20px;
+    }
+
+    .corner-bottom {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .mini-tile {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .mini-tile:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 16px 48px rgba(249, 115, 22, 0.4);
+    }
+
+    .mini-tile-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+      transition: transform 0.6s ease;
+    }
+
+    .mini-tile:hover .mini-tile-bg {
+      transform: scale(1.2);
+    }
+
+    .mini-tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(29, 78, 216, 0.6) 0%, rgba(249, 115, 22, 0.6) 100%);
+      z-index: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    .mini-tile:hover::before {
+      opacity: 0.3;
+    }
+
+    .mini-tile-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+    }
+
+    .mini-tile:hover .mini-tile-icon {
+      background: rgba(255, 255, 255, 0.95);
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    .mini-tile-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+      transition: fill 0.4s ease;
+    }
+
+    .mini-tile:hover .mini-tile-icon svg {
+      fill: var(--accent);
+    }
+
+    @media (max-width: 1024px) {
+      .video-grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .video-tile:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .video-tile:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+
+      .video-tile:nth-child(3) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+      .video-tile:nth-child(4) {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+      }
+
+      .corner-tiles {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .video-grid-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        min-height: auto;
+      }
+
+      .video-tile {
+        min-height: 40vh;
+      }
+
+      .video-tile:nth-child(1),
+      .video-tile:nth-child(2),
+      .video-tile:nth-child(3),
+      .video-tile:nth-child(4) {
+        grid-column: 1 / 2;
+        grid-row: auto;
+      }
+
+      .video-icon {
+        width: 60px;
+        height: 60px;
+      }
+
+      .video-icon svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .center-logo {
+        width: 80px;
+        height: 80px;
+      }
+
+      .center-logo svg {
+        width: 40px;
+        height: 40px;
+      }
+
+      .center-text {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="video-grid-section">
+    <div class="video-tile">
+      <div class="video-tile-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='20' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick%20to%20add%20video%3C/text%3E%3C/svg%3E'); background-size: cover; background-position: center;"></div>
+      <div class="video-tile-content">
+        <div class="video-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="floating-badge">Featured</div>
     </div>
 
-    <div class="deals-intro-guide">
-      <div class="deals-intro-guide-item">
-        <h3>What's Included</h3>
-        <p>Every package lists flights, accommodations, meals, activities, and transfers. Look for "all-inclusive" tags for worry-free pricing or "flexible" options if you prefer to customize.</p>
+    <div class="video-tile">
+      <div class="video-tile-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='20' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick%20to%20add%20video%3C/text%3E%3C/svg%3E'); background-size: cover; background-position: center;"></div>
+      <div class="video-tile-content">
+        <div class="video-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </div>
       </div>
-      <div class="deals-intro-guide-item">
-        <h3>Who It's For</h3>
-        <p>We note whether a deal suits families, couples, solo travelers, or groups. Budget tiers (economy, comfort, luxury) help you match your travel style and spending comfort.</p>
+      <div class="floating-badge">Adventure</div>
+    </div>
+
+    <div class="video-tile">
+      <div class="video-tile-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='20' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick%20to%20add%20video%3C/text%3E%3C/svg%3E'); background-size: cover; background-position: center;"></div>
+      <div class="video-tile-content">
+        <div class="video-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </div>
       </div>
-      <div class="deals-intro-guide-item">
-        <h3>How to Ask for a Custom Option</h3>
-        <p>See a deal you love but want to tweak dates, add excursions, or adjust the itinerary? Contact us directly—we'll tailor any package to your exact needs and preferences.</p>
+      <div class="floating-badge">Explore</div>
+    </div>
+
+    <div class="video-tile">
+      <div class="video-tile-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='20' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick%20to%20add%20video%3C/text%3E%3C/svg%3E'); background-size: cover; background-position: center;"></div>
+      <div class="video-tile-content">
+        <div class="video-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="floating-badge">Luxury</div>
+    </div>
+
+    <div class="center-overlay">
+      <div class="center-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+          <path d="M8 5v14l11-7z"></path>
+        </svg>
+      </div>
+      <div class="center-text">Watch Now</div>
+    </div>
+
+    <div class="corner-tiles corner-top">
+      <div class="mini-tile">
+        <div class="mini-tile-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='20' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick%20to%20add%20video%3C/text%3E%3C/svg%3E'); background-size: cover; background-position: center;"></div>
+        <div class="mini-tile-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="deals-intro-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 2" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0" y1="1" x2="900" y2="1" stroke="var(--border-light)" stroke-width="1" stroke-dasharray="0"></line>
-      <line x1="900" y1="1" x2="1200" y2="1" stroke="var(--border-light)" stroke-width="1" stroke-dasharray="4 8"></line>
-    </svg>
+    <div class="corner-tiles corner-bottom">
+      <div class="mini-tile">
+        <div class="mini-tile-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='20' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick%20to%20add%20video%3C/text%3E%3C/svg%3E'); background-size: cover; background-position: center;"></div>
+        <div class="mini-tile-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="deals-packages-section" data-layout-spec="Deals-packages">
+<section style="position: relative; width: 100%; max-width: 100%; box-sizing: border-box; overflow: visible; padding: 0; margin: 0; background: var(--bg-light); font-family: var(--font-body);" data-zappy-section="true" class="section">
+  <style>
+    .events-section-wild {
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .events-hero-wild {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--bg-dark);
+    }
+    
+    .events-hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(0.7);
+      transform: scale(1.1);
+      transition: transform 8s ease-out;
+    }
+    
+    .events-hero-wild:hover .events-hero-bg {
+      transform: scale(1.15);
+    }
+    
+    .events-hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(29, 78, 216, 0.85) 0%, rgba(20, 184, 166, 0.75) 50%, rgba(249, 115, 22, 0.85) 100%);
+      z-index: 1;
+      mix-blend-mode: multiply;
+    }
+    
+    .events-hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .events-hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 900;
+      color: var(--text-light);
+      margin: 0 0 1.5rem 0;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      text-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      animation: heroTitleSlide 1.2s ease-out;
+    }
+    
+    @keyframes heroTitleSlide {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .events-hero-subtitle {
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      color: var(--text-light);
+      margin: 0;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      animation: heroSubtitleSlide 1.4s ease-out 0.2s both;
+    }
+    
+    @keyframes heroSubtitleSlide {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .events-cards-container {
+      position: relative;
+      padding: 8rem 2rem;
+      background: linear-gradient(180deg, var(--bg-light) 0%, #F3F5F7 100%);
+      z-index: 2;
+    }
+    
+    .events-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .event-card-wild {
+      position: relative;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      transform-style: preserve-3d;
+    }
+    
+    .event-card-wild:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    }
+    
+    .event-card-image {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    .event-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    
+    .event-card-wild:hover .event-card-image img {
+      transform: scale(1.15);
+    }
+    
+    .event-card-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--gradient-gold-accent);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      z-index: 5;
+    }
+    
+    .event-card-date {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(255,255,255,0.95);
+      color: var(--primary);
+      padding: 15px 20px;
+      border-radius: 15px;
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 1.2;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      z-index: 5;
+      min-width: 70px;
+    }
+    
+    .event-card-content {
+      padding: 2rem;
+      position: relative;
+    }
+    
+    .event-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin: 0 0 1rem 0;
+      line-height: 1.3;
+    }
+    
+    .event-card-description {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0 0 1.5rem 0;
+    }
+    
+    .event-card-details {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #F9FAFB;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    
+    .event-card-cta {
+      display: inline-block;
+      width: 100%;
+      padding: 16px 32px;
+      background: var(--gradient-primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(29, 78, 216, 0.3);
+      cursor: pointer;
+      border: none;
+    }
+    
+    .event-card-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(29, 78, 216, 0.5);
+    }
+    
+    .event-card-wild.featured {
+      grid-column: span 1;
+    }
+    
+    .event-card-wild.featured .event-card-image {
+      height: 400px;
+    }
+    
+    .event-card-rtl {
+      direction: rtl;
+    }
+    
+    .event-card-rtl .event-card-badge {
+      right: auto;
+      left: 20px;
+    }
+    
+    .event-card-rtl .event-card-date {
+      left: auto;
+      right: 20px;
+    }
+    
+    .divider-wrapper-wild {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      pointer-events: none;
+      z-index: 5;
+      overflow: hidden;
+    }
+    
+    @media (max-width: 768px) {
+      .events-hero-wild {
+        min-height: 100vh;
+        padding-top: 100px;
+      }
+      
+      .events-hero-title {
+        font-size: 3rem;
+      }
+      
+      .events-hero-subtitle {
+        font-size: 1.2rem;
+      }
+      
+      .events-cards-container {
+        padding: 5rem 1.5rem;
+      }
+      
+      .events-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .event-card-wild.featured {
+        grid-column: span 1;
+      }
+      
+      .event-card-wild.featured .event-card-image {
+        height: 300px;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .events-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .event-card-wild.featured {
+        grid-column: span 2;
+      }
+      
+      .event-card-wild.featured .event-card-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+      }
+      
+      .event-card-wild.featured .event-card-image {
+        height: 500px;
+      }
+    }
+  </style>
+
+  <div class="events-section-wild">
+    <div class="events-hero-wild">
+      <div class="events-hero-bg" style="background-image: url('assets/business-general-service-upload-1770906932405.webp');  background-size: cover; background-position: center;"></div>
+      <div class="events-hero-overlay"></div>
+      <div class="events-hero-content">
+        <h2 class="events-hero-title">דילים לפריז</h2>
+        <p class="events-hero-subtitle">Join us for unforgettable travel experiences and community gatherings</p>
+      </div>
+      <div class="divider-wrapper-wild">
+        <svg viewbox="0 0 1200 120" preserveaspectratio="none" style="display:block;width:100%;height:100%;">
+          <path d="M0,120 L0,40 Q300,90 600,40 T1200,40 L1200,120 Z" fill="#F9FAFB"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="events-cards-container">
+      <div class="events-cards-grid zappy-vertical-grid"><article class="event-card-wild featured event-card-rtl">
+          <div class="event-card-image">
+            <img alt="Alpine Mountain Trek Adventure" src="/assets/business-general-service-upload-1770906932405.webp" data-placeholder="event-card-2" data-context="Mountain hiking adventure with group of hikers on scenic trail, beautiful alpine landscape with snow-capped peaks in background" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; position: relative;" data-zappy-editable-image="true" data-element-type="image" data-element-id="img-1770909981492-91zpiyow4" class="zappy-editable-image" data-original-position="static">
+            <div class="event-card-date zappy-editable">APR</div>
+            <div class="event-card-badge zappy-editable">5 spots left</div>
+          </div>
+          <div class="event-card-content">
+            <div>
+              <h3 class="event-card-title zappy-editable" style=""><h2>שייט Circle Line - סיור לפסל החירות&nbsp;</h2></h3>
+              <div class="event-card-details zappy-inline-editing" style="outline: none;"><p class="zappy-editable">New York , Circle Line SIghtseeing, pier 16</p></div>
+              <p class="event-card-description zappy-editable" style="text-align: right;"></p><h3><b><u>מידע חשוב לפני ההזמנה :&nbsp;</u></b></h3><h3>השייט אינו מתקיים ביום העצמות האמריקאי (4 ביולי) אחרי השעה 12:00, וביום חג המולד.</h3><b><u>מחיר -</u> החל מ־₪101 לאדם (US$ 27.55)&nbsp;</b><br><u><b>מה כלול&nbsp;</b><span style="color: var(--text-muted); font-size: 1rem;"><b>בהזמנה</b>&nbsp;</span></u><span style="color: var(--text-muted); font-size: 1rem;"><b><u>-</u>&nbsp;</b></span><span style="color: var(--text-muted); font-size: 1rem;">מדריך דובר אנגלית ,&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">Wifi</span><span style="color: var(--text-muted); font-size: 1rem;">&nbsp;על הספינה,&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">כניסה לפסל החירות,&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">איסוף מהמלון והחזרה אליו</span><span style="color: var(--text-muted); font-size: 1rem;">&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">ארוחות ושתייה.</span><span style="color: var(--text-muted); font-size: 1rem;"><br></span><span style="color: var(--text-muted); font-size: 1rem;"><b><u>מה לא כלול-</u>&nbsp;</b></span><span style="color: var(--text-muted); font-size: 1rem;">הוצאות אישיות נוספות,&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">טיפ למדריך / לצוות.</span><br><span style="color: var(--text-muted); font-size: 1rem;"><b><u>מידע נוסף :&nbsp;</u></b></span><span style="color: var(--text-muted); font-size: 1rem;">פעילות נגישה לכסאות גלגלים (למרות שהדק העליון אינו נגיש),&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">אין לעשן,</span><span style="color: var(--text-muted); font-size: 1rem;">&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">אסור להכניס אוכל או שתייה מהבית.&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">מקומות ישיבה מוגבלים - מי שמגיע ראשון מקבל מקום&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">ניתן להוריד מדריך שמע חינם באפליקציית Circle Line Skyline Navigator.&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">במקרה שהשייט אינו זמין, ניתן שייט חלופי או שדרוג לשייט אחר (בתשלום ההפרש אם נדרש).</span><span style="color: var(--text-muted); font-size: 1rem;"><br></span><span style="color: var(--text-muted); font-size: 1rem;"><b><u>שובר / כרטיס נייד-&nbsp;</u></b></span><span style="color: var(--text-muted); font-size: 1rem;">הכרטיס תקף רק בתאריך שנבחר&nbsp;</span><span style="color: var(--text-muted); font-size: 1rem;">יש להציג את השובר הנייד - זהו הכרטיס בפועל</span><span style="color: var(--text-muted); font-size: 1rem;">.</span><p></p>
+            </div>
+            <div>
+              <button class="event-card-cta zappy-editable" data-element-type="button" data-element-id="btn-1770909981334-ukfb89o3n" data-native-element="true">Register Now</button>
+            </div>
+          </div>
+        </article><article class="event-card-wild">
+          <div class="event-card-image">
+            <img alt="Cultural Tea Ceremony Experience" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='16' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick to add image%3C/text%3E%3C/svg%3E" data-placeholder="event-card-3" data-context="Traditional Japanese tea ceremony in authentic tatami room, elegant kimono-clad host performing ceremonial tea preparation" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; position: relative;" data-zappy-editable-image="true" data-element-type="image" data-element-id="img-1770909981492-75q8i6dtr" class="zappy-editable-image" data-original-position="static">
+            <div class="event-card-date zappy-editable">MAR</div>
+            <div class="event-card-badge zappy-editable">8 spots left</div>
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-card-title zappy-editable">Cultural Tea Ceremony Experience</h3>
+            <p class="event-card-description zappy-editable">Immerse yourself in the ancient art of Japanese tea ceremony. Learn traditional customs, enjoy authentic matcha, and discover the philosophy behind this meditative practice.</p>
+            <button class="event-card-cta zappy-editable" data-element-type="button" data-element-id="btn-1770909981334-d0j7gc4nj" data-native-element="true">Register Now</button>
+          </div>
+        </article><article class="event-card-wild">
+          <div class="event-card-image">
+            <img alt="Hot Air Balloon Sunrise Tour" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='16' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick to add image%3C/text%3E%3C/svg%3E" data-placeholder="event-card-4" data-context="Hot air balloons floating over ancient temples at sunrise in Cappadocia, golden morning light illuminating fairy chimneys and rock formations" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; position: relative;" data-zappy-editable-image="true" data-element-type="image" data-element-id="img-1770909981508-akrk0qwzf" class="zappy-editable-image" data-original-position="static">
+            <div class="event-card-date zappy-editable">APR</div>
+            <div class="event-card-badge zappy-editable">15 spots left</div>
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-card-title zappy-editable">Hot Air Balloon Sunrise Tour</h3>
+            <p class="event-card-description zappy-editable">Soar above the magical landscape of Cappadocia at dawn. Witness the fairy chimneys and ancient valleys from a unique perspective as the sun paints the sky in golden hues.</p>
+            <button class="event-card-cta zappy-editable" data-element-type="button" data-element-id="btn-1770909981334-416fj51yk" data-native-element="true">Register Now</button>
+          </div>
+        </article><article class="event-card-wild">
+          <div class="event-card-image">
+            <img alt="Street Food Night Market Tour" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='16' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EClick to add image%3C/text%3E%3C/svg%3E" data-placeholder="event-card-5" data-context="Vibrant street food market at night with colorful stalls, chefs cooking traditional dishes, steam rising from woks, people enjoying food" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; position: relative;" data-zappy-editable-image="true" data-element-type="image" data-element-id="img-1770909981508-qn3hw5k5a" class="zappy-editable-image" data-original-position="static">
+            <div class="event-card-date zappy-editable">APR</div>
+            <div class="event-card-badge zappy-editable">20 spots left</div>
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-card-title zappy-editable">Street Food Night Market Tour</h3>
+            <p class="event-card-description zappy-editable">Embark on a culinary adventure through Bangkok's bustling night markets. Sample authentic Thai street food, discover hidden gems, and learn about local food culture from expert guides.</p>
+            <button class="event-card-cta zappy-editable" data-element-type="button" data-element-id="btn-1770909981334-yln0btn63" data-native-element="true">Register Now</button>
+          </div>
+        </article></div>
+    </div>
+  </div>
+</section>
+
+<section id="layout-1770898946143" class="layout-section" data-zappy-component="true" style="width: 100%; padding: 60px 0; direction: rtl;" data-component-id="empty-section">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+    <p style="font-size: 16px; line-height: 1.7; color: #1F2937; opacity: 0.5; text-align: center; font-family: Plus Jakarta Sans, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;">הוסף את תוכן הטקסט שלך כאן. זהו טקסט ממלא מקום שניתן לערוך.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="deals-packages-section" data-layout-spec="Deals-packages" data-zappy-section="true">
   <div class="deals-packages-container">
     <div class="deals-packages-header">
       <h2>Travel Packages &amp; Deals</h2>
-      <p>Discover our handpicked selection of travel packages designed for every type of traveler. From romantic getaways to family adventures, find your perfect escape.</p>
+      <p class="deals-packages-intro">Discover our handpicked selection of travel packages designed for every type of traveler. From romantic getaways to family adventures, find your perfect escape.</p>
     </div>
 
     <div class="deals-packages-grid">
-      <!-- Card 1: Paris City Break -->
+      <!-- Card 1: Paris -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-1" data-context="Romantic Paris cityscape with Eiffel Tower at sunset, charming cobblestone streets, outdoor cafe culture, warm golden hour lighting for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-1.webp" alt="Paris City Break Package">
+        <div class="package-card-image">
+          <img alt="Paris City Break Package" src="/assets/site-deals-packages-image-1.webp" data-placeholder="deals-packages-image-1" data-context="Romantic Paris cityscape with Eiffel Tower at sunset, charming cobblestone streets, outdoor cafe culture, warm golden hour lighting for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
-          <h3>Paris City Break</h3>
-          <p class="package-description">Experience the romance of the City of Light with this 4-5 day escape. Stroll along the Seine, visit world-class museums, and indulge in French cuisine.</p>
+        <div class="package-card-content">
+          <h3>דיל משתלם לפריז -טיסות + מלון</h3>
+          <p class="package-description">חופשה אורבנית בפריז - עיר האורות! דיל משתלם הכולל טיסות ולינה במלון 3 כוכבים במיקום נוח בעיר מושלם לזוגות, קניות, תרבות ורומנטיקה</p>
           <div class="package-inclusions">
-            <p>Round-trip flights</p>
-            <p>4-star hotel accommodation</p>
-            <p>Daily breakfast buffet</p>
-            <p>Airport transfers included</p>
+            <p>החל מ- 1,650  לאדם (כ- 3,300  לזוג), מחיר משתנה לפי תאריכים וזמינות</p>
+            <p>כולל טיסות</p>
+            <p>מיקום מרכזי, תחבורה נוחה</p>
+            <p>תאריכים זולים מומלצים - פברואר - מרץנובמבר -תחילת דצמבר</p>
           </div>
           <a href="/contact" class="btn-primary package-cta">Contact to inquire</a>
         </div>
       </article>
 
-      <!-- Card 2: Maldives Beach Resort -->
+      <!-- Card 2: Maldives -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-2" data-context="Luxury overwater bungalow in Maldives with crystal clear turquoise water, white sand beach, palm trees, tropical paradise for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-2.webp" alt="Maldives Beach Resort Package">
+        <div class="package-card-image">
+          <img alt="Maldives Beach Resort Package" src="/assets/site-deals-packages-image-2.webp" data-placeholder="deals-packages-image-2" data-context="Luxury overwater bungalow in Maldives with crystal clear turquoise water, white sand beach, palm trees, tropical paradise for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
-          <h3>Maldives Beach Resort</h3>
-          <p class="package-description">Unwind in paradise with this 7-day luxury beach getaway. Crystal-clear waters, pristine beaches, and overwater bungalows await you in the Indian Ocean.</p>
+        <div class="package-card-content">
+          <h3>חופשה במלדיבים - חופים לבנים ומים טורקיז</h3>
+          <p class="package-description">חבילה מושלמת לשבוע חלומי במלדיבים, כולל לינה על חוף ים, מים צלולים, אפשרויות שנורקלינג וסיורים בדולפיניםמתאים לזוגות ומי שרוצה חופשה רומנטית או משפחתית</p>
           <div class="package-inclusions">
-            <p>International flights included</p>
-            <p>5-star resort with ocean view</p>
-            <p>All-inclusive meal plan</p>
-            <p>Speedboat transfers</p>
+            <p>החל מ- 9,200 לזוג לשבוע (כולל טיסות והעברות), מחיר משתנה לפי תאריכים ומלאי</p>
+            <p>כולל לינה במלון ליד החוף</p>
+            <p>אווירה רומנטית וטרופית</p>
+            <p>תאריכים מומלצים - פברואר - מרץ 2026נובמבר - תחילת דצמבר 2026</p>
           </div>
           <a href="/contact" class="btn-primary package-cta">Contact to inquire</a>
         </div>
       </article>
 
-      <!-- Card 3: Swiss Alps Adventure -->
+      <!-- Card 3: Swiss Alps -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-3" data-context="Stunning Swiss Alps mountain landscape with snow-capped peaks, green valleys, traditional alpine village, hiking trails for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-3.webp" alt="Swiss Alps Nature Escape Package">
+        <div class="package-card-image">
+          <img alt="Swiss Alps Nature Escape Package" src="/assets/site-deals-packages-image-3.webp" data-placeholder="deals-packages-image-3" data-context="Stunning Swiss Alps mountain landscape with snow-capped peaks, green valleys, traditional alpine village, hiking trails for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
+        <div class="package-card-content">
           <h3>Swiss Alps Adventure</h3>
           <p class="package-description">Discover the breathtaking beauty of the Swiss Alps on this 5-6 day nature escape. Perfect for hiking enthusiasts and mountain lovers seeking fresh alpine air.</p>
           <div class="package-inclusions">
@@ -844,12 +1892,12 @@
         </div>
       </article>
 
-      <!-- Card 4: Orlando Family Fun -->
+      <!-- Card 4: Orlando -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-4" data-context="Family-friendly Orlando theme park with colorful attractions, happy families, iconic castle, sunny Florida day for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-4.webp" alt="Orlando Family Package">
+        <div class="package-card-image">
+          <img alt="Orlando Family Package" src="/assets/site-deals-packages-image-4.webp" data-placeholder="deals-packages-image-4" data-context="Family-friendly Orlando theme park with colorful attractions, happy families, iconic castle, sunny Florida day for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
+        <div class="package-card-content">
           <h3>Orlando Family Fun</h3>
           <p class="package-description">Create magical memories with this 6-7 day family-friendly package. Theme parks, water parks, and endless entertainment for kids and adults alike.</p>
           <div class="package-inclusions">
@@ -862,12 +1910,12 @@
         </div>
       </article>
 
-      <!-- Card 5: Barcelona Weekend Getaway -->
+      <!-- Card 5: Barcelona -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-5" data-context="Barcelona cityscape with Sagrada Familia, colorful Gaudi architecture, Mediterranean coast, vibrant street life for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-5.webp" alt="Barcelona Weekend Getaway Package">
+        <div class="package-card-image">
+          <img alt="Barcelona Weekend Getaway Package" src="/assets/site-deals-packages-image-5.webp" data-placeholder="deals-packages-image-5" data-context="Barcelona cityscape with Sagrada Familia, colorful Gaudi architecture, Mediterranean coast, vibrant street life for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
+        <div class="package-card-content">
           <h3>Barcelona Weekend Getaway</h3>
           <p class="package-description">Immerse yourself in Catalan culture with this 3-4 day quick escape. Explore Gaudí's masterpieces, savor tapas, and soak up the Mediterranean sun.</p>
           <div class="package-inclusions">
@@ -880,12 +1928,12 @@
         </div>
       </article>
 
-      <!-- Card 6: Bali Tropical Escape -->
+      <!-- Card 6: Bali -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-6" data-context="Serene Bali rice terraces with traditional temples, lush tropical jungle, peaceful zen atmosphere for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-6.webp" alt="Bali Tropical Escape Package">
+        <div class="package-card-image">
+          <img alt="Bali Tropical Escape Package" src="/assets/site-deals-packages-image-6.webp" data-placeholder="deals-packages-image-6" data-context="Serene Bali rice terraces with traditional temples, lush tropical jungle, peaceful zen atmosphere for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
+        <div class="package-card-content">
           <h3>Bali Tropical Escape</h3>
           <p class="package-description">Find tranquility in this 8-day Indonesian paradise. Discover ancient temples, pristine beaches, rice terraces, and world-class wellness retreats.</p>
           <div class="package-inclusions">
@@ -898,12 +1946,12 @@
         </div>
       </article>
 
-      <!-- Card 7: New York City Explorer -->
+      <!-- Card 7: New York -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-7" data-context="Iconic New York City skyline with Empire State Building, Times Square lights, yellow taxis, bustling urban energy for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-7.webp" alt="New York City Package">
+        <div class="package-card-image">
+          <img alt="New York City Package" src="/assets/site-deals-packages-image-7.webp" data-placeholder="deals-packages-image-7" data-context="Iconic New York City skyline with Empire State Building, Times Square lights, yellow taxis, bustling urban energy for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
+        <div class="package-card-content">
           <h3>New York City Explorer</h3>
           <p class="package-description">Experience the city that never sleeps on this 4-5 day urban adventure. Broadway shows, world-class dining, iconic landmarks, and endless excitement await.</p>
           <div class="package-inclusions">
@@ -916,12 +1964,12 @@
         </div>
       </article>
 
-      <!-- Card 8: Caribbean Cruise -->
+      <!-- Card 8: Caribbean -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-8" data-context="Luxury cruise ship sailing through turquoise Caribbean waters, tropical islands in background, sunny vacation atmosphere for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-8.webp" alt="Caribbean Cruise Package">
+        <div class="package-card-image">
+          <img alt="Caribbean Cruise Package" src="/assets/site-deals-packages-image-8.webp" data-placeholder="deals-packages-image-8" data-context="Luxury cruise ship sailing through turquoise Caribbean waters, tropical islands in background, sunny vacation atmosphere for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
+        <div class="package-card-content">
           <h3>Caribbean Cruise</h3>
           <p class="package-description">Set sail on a 7-day journey through the Caribbean islands. Visit multiple destinations, enjoy onboard entertainment, and relax in tropical paradise.</p>
           <div class="package-inclusions">
@@ -934,12 +1982,12 @@
         </div>
       </article>
 
-      <!-- Card 9: Iceland Northern Lights -->
+      <!-- Card 9: Iceland -->
       <article class="package-card">
-        <div class="package-image-wrapper">
-          <img data-placeholder="deals-packages-image-9" data-context="Stunning Northern Lights aurora borealis over Iceland landscape with glaciers, geothermal pools, dramatic winter scenery for travel agency" width="600" height="400" src="/assets/site-deals-packages-image-9.webp" alt="Iceland Northern Lights Package">
+        <div class="package-card-image">
+          <img alt="Iceland Northern Lights Package" src="/assets/site-deals-packages-image-9.webp" data-placeholder="deals-packages-image-9" data-context="Stunning Northern Lights aurora borealis over Iceland landscape with glaciers, geothermal pools, dramatic winter scenery for travel agency" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
         </div>
-        <div class="package-content">
+        <div class="package-card-content">
           <h3>Iceland Northern Lights</h3>
           <p class="package-description">Witness nature's greatest light show on this 5-6 day winter adventure. Explore glaciers, geothermal pools, waterfalls, and chase the magical aurora borealis.</p>
           <div class="package-inclusions">
@@ -954,10 +2002,10 @@
     </div>
   </div>
 
-  <!-- Bottom Paper-Layer Transition -->
+  <!-- Bottom Transition: Soft Paper Layer Overlap -->
   <div class="deals-packages-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,40 L0,0 L1200,0 L1200,40 Z" fill="#F3F5F7"></path>
+    <svg aria-hidden="true" viewbox="0 0 1200 40" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 L0,10 Q200,8 400,12 T800,10 Q1000,14 1200,10 L1200,40 Z" fill="#F3F5F7"></path>
     </svg>
   </div>
 </section>
@@ -1000,64 +2048,61 @@
             </th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody class="zappy-vertical-grid"><tr class="" style="background-color: rgba(0, 0, 0, 0) !important;">
+            <td class="feature-name zappy-editable" style="cursor: text;">Cell</td>
+            <td class="zappy-editable" style="cursor: text;">]</td>
+            <td class="zappy-editable" style="cursor: text;">Cell</td>
+            <td class="zappy-editable" style="cursor: text;">Cell</td>
+            <td class="zappy-editable" style="cursor: text;">Cell</td>
+          </tr><tr class="" style="display: flex !important; flex-direction: column !important; justify-content: flex-end !important; align-items: stretch !important;">
             <td class="feature-name">Flights</td>
             <td>Economy class</td>
             <td>Economy Plus</td>
             <td>Business class</td>
             <td>Economy class</td>
-          </tr>
-          <tr>
+          </tr><tr class="">
             <td class="feature-name">Hotel Standard</td>
             <td>3-star hotel</td>
             <td>4-star hotel</td>
             <td>5-star resort</td>
             <td>Family suites</td>
-          </tr>
-          <tr>
+          </tr><tr class="">
             <td class="feature-name">Meals</td>
             <td>Breakfast only</td>
             <td>Breakfast + dinner</td>
             <td>All-inclusive</td>
             <td>Breakfast + dinner</td>
-          </tr>
-          <tr>
+          </tr><tr class="">
             <td class="feature-name">Transfers</td>
             <td>Shared shuttle</td>
             <td>Private transfer</td>
             <td>Private luxury car</td>
             <td>Private van</td>
-          </tr>
-          <tr>
+          </tr><tr class="">
             <td class="feature-name">Local Support</td>
             <td>24/7 hotline</td>
             <td>Dedicated agent</td>
             <td>Personal concierge</td>
             <td>Family coordinator</td>
-          </tr>
-          <tr>
+          </tr><tr class="">
             <td class="feature-name">Activities</td>
             <td>1 guided tour</td>
             <td>3 guided tours</td>
             <td>Unlimited activities</td>
             <td>Kid-friendly tours</td>
-          </tr>
-          <tr>
+          </tr><tr class="">
             <td class="feature-name">Flexibility</td>
             <td>Standard policy</td>
             <td>Free changes</td>
             <td>Full flexibility</td>
             <td>Family-friendly policy</td>
-          </tr>
-          <tr>
+          </tr><tr class="">
             <td class="feature-name">Best For</td>
             <td>Solo travelers</td>
             <td>Couples</td>
             <td>Luxury seekers</td>
             <td>Families with kids</td>
-          </tr>
-        </tbody>
+          </tr></tbody>
       </table>
     </div>
 
@@ -1229,12 +2274,12 @@
   </div>
 
   <div class="deals-comparison-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <linearGradient id="comparison-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <lineargradient id="comparison-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" style="stop-color:#EFF6FF;stop-opacity:0.3"></stop>
           <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1"></stop>
-        </linearGradient>
+        </lineargradient>
       </defs>
       <path d="M0,60 L0,0 L1200,0 L1200,60 Z" fill="url(#comparison-gradient)"></path>
     </svg>
@@ -1279,8 +2324,8 @@
   </div>
   
   <div class="deals-faq-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,60 L0,40 L1200,10 L1200,60 Z" fill="var(--bg-light)"></path>
+    <svg aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 L0,40 L1200,10 L1200,60 Z" fill="var(--bg-dark)"></path>
     </svg>
   </div>
 </section>
@@ -1295,7 +2340,7 @@
 </section>
   </main>
   
-  <footer class="site-footer"><div class="footer-container"><div class="footer-grid"><div class="footer-column footer-about"><img src="/assets/business-logo.webp" alt="Travel&amp;Enjoyed" class="logo" /><p class="footer-tagline">Discover the world with us. Your journey begins here with unforgettable experiences and destinations.</p><div class="footer-social"><a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-column"><h3 class="footer-heading">Quick Links</h3><ul class="footer-links"><li><a href="/deals">Deals</a></li><li><a href="/destinations">Destinations</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-column"><h3 class="footer-heading">Contact Us</h3><ul class="footer-contact"><li><i class="fas fa-envelope"></i><a href="mailto:[business_email]">[business_email]</a></li><li><i class="fas fa-phone"></i><a href="tel:[business_phone]">[business_phone]</a></li><li><a href="/"><i class="fas fa-map-marker-alt"></i><span>[business_address]</span></a></li></ul></div><div class="footer-column"><h3 class="footer-heading">Legal</h3><ul class="footer-links"><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms &amp; Conditions</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div></div><div class="footer-bottom"><p class="footer-copyright">© 2026 Travel&amp;Enjoyed. All rights reserved.</p><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></footer>
+  <footer class="site-footer"><div class="footer-container"><div class="footer-grid"><div class="footer-column footer-about"><img src="/assets/business-logo.webp" alt="Travel&amp;Enjoyed" class="logo"><p class="footer-tagline">Discover the world with us. Your journey begins here with unforgettable experiences and destinations.</p><div class="footer-social"><a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-column"><h3 class="footer-heading">Quick Links</h3><ul class="footer-links"><li><a href="/deals">Deals</a></li><li><a href="/destinations">Destinations</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-column"><h3 class="footer-heading">Contact Us</h3><ul class="footer-contact"><li><i class="fas fa-envelope"></i><a href="mailto:[business_email]">[business_email]</a></li><li><i class="fas fa-phone"></i><a href="tel:[business_phone]">[business_phone]</a></li><li><a href="/"><i class="fas fa-map-marker-alt"></i><span>[business_address]</span></a></li></ul></div><div class="footer-column"><h3 class="footer-heading">Legal</h3><ul class="footer-links"><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms &amp; Conditions</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div></div><div class="footer-bottom"><p class="footer-copyright">© 2026 Travel&amp;Enjoyed. All rights reserved.</p><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></footer>
   
   <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
