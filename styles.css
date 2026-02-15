@@ -8166,16 +8166,95 @@ body.accessibility-widget-visible ._access-menu {
 /* Added Component Styles */
 
 
-/* Added Component Styles */
+/* ═══════════════════════════════════════════════════════════════════════════
+   ZAPPY-TYPOGRAPHY-STANDARDS-V1
+   Standard typography sizes for all V2 sites.
+   Desktop: h1=48px, h2=32px, h3=22px, p=16px, small=14px
+   Tablet:  h1=36px, h2=28px, h3=20px, p=15px
+   Mobile:  h1=28px, h2=22px, h3=18px, p=14px
+   ═══════════════════════════════════════════════════════════════════════════ */
 
+/* Base font-size on html/body ensures all elements (divs, spans, etc.) inherit 16px */
+html {
+  font-size: 16px !important;
+}
 
-/* Added Component Styles */
+body {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
 
+/* Desktop typography standards */
+h1 {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 0.5rem !important;
+}
 
-/* Added Component Styles */
+h2 {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 0.5rem !important;
+}
 
+h3 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 0.5rem !important;
+}
 
-/* Added Component Styles */
+p {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  margin-bottom: 1rem !important;
+}
+
+small, .small-text {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+/* Tablet typography (max-width: 1024px) */
+@media (max-width: 1024px) {
+  h1 { font-size: 36px !important; }
+  h2 { font-size: 28px !important; }
+  h3 { font-size: 20px !important; }
+  p  { font-size: 15px !important; }
+}
+
+/* Mobile typography (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px !important;
+    margin-bottom: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+  h2 {
+    font-size: 22px !important;
+    margin-bottom: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+  h3 {
+    font-size: 18px !important;
+    margin-bottom: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   END ZAPPY-TYPOGRAPHY-STANDARDS-V1
+   ═══════════════════════════════════════════════════════════════════════════ */
 
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
