@@ -2006,11 +2006,231 @@
   </div>
 </section>
 
-<section id="layout-1771173450723" class="layout-section" data-zappy-component="true" style="width: 100%; padding: 60px 0; direction: rtl;" data-component-id="empty-section">
-  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
-    <p style="font-size: 16px; line-height: 1.7; color: #1F2937; opacity: 0.5; text-align: center; font-family: Plus Jakarta Sans, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;">
+<section style="position: relative; width: 100%; max-width: 100%; box-sizing: border-box; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0B1220 0%, #1D4ED8 50%, #14B8A6 100%); overflow: hidden; padding: 120px 20px 80px;" data-zappy-section="true" class="section">
+  <style>
+    .airhelp-redesign {
+      position: relative;
+      z-index: 10;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+    }
 
-AirHelp שעוזרת להבין את זכויותיכם ולקבל עד 600 אירו כפיצוי על טיסות שעוכבו או בוטלו. כל שעליכם לעשות הוא למסור את פרטי הטיסה שלכם. אם אתם זכאים, AirHelp תטפל בתהליך התביעה בשמכם תמורת עמלה של 35% (50% אם נדרשים הליכים משפטיים).&nbsp;<a href="https://https://airhelp.tp.st/xXxcrULT" target="_blank" rel="noopener noreferrer" style="color: rgb(29, 78, 216); text-decoration: underline; cursor: pointer;">https://airhelp.tp.st/xXxcrULT</a></p>
+    .airhelp-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 40px;
+      padding: 80px 60px;
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+      transform: perspective(1000px) rotateX(2deg);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .airhelp-card:hover {
+      transform: perspective(1000px) rotateX(0deg) translateY(-10px);
+      box-shadow: 0 50px 120px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    }
+
+    .airhelp-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-gold-shine);
+      animation: shine 3s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes shine {
+      0%, 100% { left: -100%; }
+      50% { left: 100%; }
+    }
+
+    .airhelp-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .airhelp-text {
+      font-family: var(--font-body);
+      font-size: 1.25rem;
+      line-height: 2;
+      color: var(--text-dark);
+      text-align: right;
+      direction: rtl;
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    .airhelp-link {
+      display: inline-block;
+      background: var(--gradient-primary);
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 18px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 10px 30px rgba(29, 78, 216, 0.4);
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 0.05em;
+    }
+
+    .airhelp-link::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+
+    .airhelp-link:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    .airhelp-link:hover {
+      transform: scale(1.05) translateY(-3px);
+      box-shadow: 0 15px 40px rgba(29, 78, 216, 0.6);
+    }
+
+    .airhelp-link span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .floating-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      animation: float 20s infinite ease-in-out;
+    }
+
+    .shape-1 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+      top: -200px;
+      left: -200px;
+      animation-delay: 0s;
+    }
+
+    .shape-2 {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+      bottom: -150px;
+      right: -150px;
+      animation-delay: 5s;
+    }
+
+    .shape-3 {
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+      top: 50%;
+      right: -100px;
+      animation-delay: 10s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translate(0, 0) scale(1);
+      }
+      33% {
+        transform: translate(50px, -50px) scale(1.1);
+      }
+      66% {
+        transform: translate(-30px, 30px) scale(0.9);
+      }
+    }
+
+    .accent-decoration {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      background: var(--gradient-gold-accent);
+      opacity: 0.1;
+      top: -50px;
+      right: -50px;
+      animation: morph 8s infinite ease-in-out;
+    }
+
+    @keyframes morph {
+      0%, 100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      }
+      50% {
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .airhelp-card {
+        padding: 50px 30px;
+        border-radius: 30px;
+        transform: perspective(1000px) rotateX(0deg);
+      }
+
+      .airhelp-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+
+      .airhelp-link {
+        padding: 15px 35px;
+        font-size: 1rem;
+        margin-top: 30px;
+      }
+
+      .floating-shape {
+        opacity: 0.08;
+      }
+
+      .shape-1 {
+        width: 250px;
+        height: 250px;
+      }
+
+      .shape-2 {
+        width: 200px;
+        height: 200px;
+      }
+
+      .shape-3 {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+
+  <div class="floating-shape shape-1"></div>
+  <div class="floating-shape shape-2"></div>
+  <div class="floating-shape shape-3"></div>
+
+  <div class="airhelp-redesign">
+    <div class="airhelp-card">
+      <div class="accent-decoration"></div>
+      <div class="airhelp-content">
+        <p class="airhelp-text">
+          AirHelp שעוזרת להבין את זכויותיכם ולקבל עד 600 אירו כפיצוי על טיסות שעוכבו או בוטלו. כל שעליכם לעשות הוא למסור את פרטי הטיסה שלכם. אם אתם זכאים, AirHelp תטפל בתהליך התביעה בשמכם תמורת עמלה של 35% (50% אם נדרשים הליכים משפטיים). <a href="https://https://airhelp.tp.st/xXxcrULT" class="airhelp-link"><span>https://airhelp.tp.st/xXxcrULT</span></a>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
