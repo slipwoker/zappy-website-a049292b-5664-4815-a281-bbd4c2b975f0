@@ -3123,6 +3123,212 @@
   }
 }
 </style>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.home-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  background-color: var(--bg-light);
+}
+
+/* Background image layer (z-index: 0) */
+.home-hero-section__bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.home-hero-section__bg-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(0.85) contrast(0.95);
+}
+
+/* Gradient scrim overlay (z-index: 1) */
+.home-hero-section__scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(11, 31, 58, 0.75) 0%, rgba(11, 31, 58, 0.55) 45%, rgba(11, 31, 58, 0.15) 75%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content wrapper (z-index: 10) */
+.home-hero-section__content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Glassmorphism overlay card */
+.home-hero-section__overlay-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  padding: 48px 40px;
+  max-width: 580px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.18);
+  color: var(--text-dark);
+}
+
+/* Typography */
+.home-hero-section__title {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: #1F2A37;
+  margin: 0 0 16px 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.home-hero-section__subtitle {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #6B7280;
+  margin: 0 0 28px 0;
+}
+
+/* CTA group */
+.home-hero-section__cta-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.home-hero-section__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  white-space: nowrap;
+}
+
+.home-hero-section__btn--primary {
+  background: #0B63B6;
+  color: #FFFFFF;
+  border: 1px solid #0A5AA7;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.home-hero-section__btn--primary:hover {
+  background: #0A5AA7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(11, 99, 182, 0.3);
+}
+
+.home-hero-section__btn--secondary {
+  background: #F0701A;
+  color: #FFFFFF;
+  border: 1px solid #D85F13;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.home-hero-section__btn--secondary:hover {
+  background: #D85F13;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(240, 112, 26, 0.3);
+}
+
+/* Bottom wave divider (z-index: 5) */
+.home-hero-section__divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.home-hero-section__divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .home-hero-section {
+    min-height: 100vh;
+  }
+
+  .home-hero-section__content-wrapper {
+    padding: 100px 16px 60px;
+    align-items: flex-start;
+  }
+
+  .home-hero-section__overlay-card {
+    padding: 32px 24px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .home-hero-section__title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .home-hero-section__subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .home-hero-section__cta-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-hero-section__btn {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .home-hero-section__divider-wrapper {
+    height: 60px;
+  }
+
+  .home-hero-section__scrim {
+    background: linear-gradient(180deg, rgba(11, 31, 58, 0.65) 0%, rgba(11, 31, 58, 0.45) 60%, rgba(11, 31, 58, 0.25) 100%);
+  }
+}
+</style>
 <!-- Zappy Analytics -->
 <script>
 (function() {
@@ -3801,31 +4007,27 @@
   <!-- Full-bleed background image -->
   <div class="home-hero-section__bg-wrapper">
     <div class="home-hero-section__bg-image" style="background-image: url('assets/site-home-hero-bg.webp');  background-size: cover; background-position: center;"></div>
-    <!-- Gradient scrim overlay for text legibility -->
-    <div class="home-hero-section__scrim" aria-hidden="true"></div>
   </div>
 
-  <!-- Content overlay container -->
+  <!-- Gradient scrim overlay for text legibility -->
+  <div class="home-hero-section__scrim" aria-hidden="true"></div>
+
+  <!-- Text overlay card -->
   <div class="home-hero-section__content-wrapper">
-    <div class="home-hero-section__content-container">
-      <!-- Glass morphism card with text content -->
-      <div class="home-hero-section__text-card">
-        <h1 class="home-hero-section__title">Find Your Next Great Trip Deal</h1>
-        <h3 class="home-hero-section__subtitle">Discover curated travel packages with clear inclusions, transparent pricing, and simple planning—so you can focus on the adventure ahead.</h3>
-        
-        <!-- CTA buttons -->
-        <div class="home-hero-section__cta-group">
-          <a href="/deals" class="home-hero-section__btn home-hero-section__btn--primary">Explore Deals</a>
-          <a href="/contact" class="home-hero-section__btn home-hero-section__btn--secondary">Talk to an Expert</a>
-        </div>
+    <div class="home-hero-section__overlay-card">
+      <h1 class="home-hero-section__title">Find Your Next Great Trip Deal</h1>
+      <h3 class="home-hero-section__subtitle">Discover curated travel packages with clear inclusions, transparent pricing, and simple planning—so you can focus on the adventure ahead.</h3>
+      <div class="home-hero-section__cta-group">
+        <a href="/deals" class="home-hero-section__btn home-hero-section__btn--primary">Explore Deals</a>
+        <a href="/contact" class="home-hero-section__btn home-hero-section__btn--secondary">Talk to an Expert</a>
       </div>
     </div>
   </div>
 
-  <!-- Bottom SVG wave divider transitioning to next section -->
+  <!-- Bottom wave divider -->
   <div class="home-hero-section__divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,20 Q150,35 300,28 T600,35 Q750,28 900,35 T1200,28 L1200,80 Z" fill="var(--bg-light)"></path>
+      <path d="M0,80 L0,50 Q150,35 300,45 T600,40 Q750,48 900,38 T1200,50 L1200,80 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
 </section>
